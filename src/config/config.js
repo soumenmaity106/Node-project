@@ -8,9 +8,6 @@ const envVarsSchema = Joi.object()
 	.keys({
 		NODE_ENV: Joi.string().valid("production", "development", "test"),
 		PORT: Joi.number().default(3000),
-		// MONGODB_URL: Joi.string().default(
-		// 	"mongodb://brain1uMMong0User:PL5qnU9nuvX0pBa@nodeserver.mydevfactory.com:27017/A2zcater?authSource=admin"
-		// ),
 		JWT_SECRET: Joi.string().default(3000),
 		JWT_ACCESS_EXPIRATION_MINUTES: Joi.number()
 			.default(30)
